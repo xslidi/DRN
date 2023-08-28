@@ -13,17 +13,17 @@ In this project, we present a a novel framework to retouch the degraded photos t
 
 
 ## Citation
-    If you find this repository useful, please kindly consider citing the following paper:
+If you find this repository useful, please kindly consider citing the following paper:
 
-    ```BibTeX
-    @article{li2023learning,
-    title={Learning Deep Representations for Photo Retouching},
-    author={Li, Di and Rahardja, Susanto},
-    journal={IEEE Transactions on Multimedia},
-    year={2023},
-    publisher={IEEE}
-    }
-    ```
+```BibTeX
+@article{li2023learning,
+title={Learning Deep Representations for Photo Retouching},
+author={Li, Di and Rahardja, Susanto},
+journal={IEEE Transactions on Multimedia},
+year={2023},
+publisher={IEEE}
+}
+```
 
 ## License
 
