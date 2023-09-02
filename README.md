@@ -11,6 +11,31 @@ The codebase provides the official PyTorch implementation for the paper [" Learn
 
 In this project, we present a a novel framework to retouch the degraded photos towards a specific photographic style in an unsupervised fashion. To be specific, we unify the design philosophy of the generator and the discriminator into a multi-scale form and reuse these powerful networks as feature extractors to obtain deep latent representations of the photos with varying scales. Then, we employed projection heads to map these deep representations to a neater loss space for evaluation. In particular, we utilized a contrastive scheme for generator to keep the content consistency and a cross entropy scheme for discriminator to improve the aesthetic quality. Powered by this simple yet efficient design philosophy, our algorithm surpasses previous algorithms on two well known datasets with photo enhancement task. As a learning framework compliable with various enhancement networks, our algorithm shows great potential to be a practical tool to efficiently and effectively build photo retouching systems with different needs.
 
+## Dependencies 
+
+- Python 3 (Recommend to use [Anaconda](https://www.anaconda.com/download/#linux))
+- [PyTorch >= 1.0](https://pytorch.org/)
+- Opencv
+- Imageio
+- [visdom](https://github.com/facebookresearch/visdom)
+
+## Datasets
+
+The paper use the [FiveK](https://data.csail.mit.edu/graphics/fivek/) and [HDR+](http://www.hdrplusdata.org/) datasets for experiments.
+
+- FiveK
+
+You can download the original FiveK dataset from the dataset [homepage](https://data.csail.mit.edu/graphics/fivek/) and then preprocess the dataset using Adobe Lightroom.
+
+The final directory structure is as follows.
+
+```
+./data/FiveK
+    trainA/         # 8-bit sRGB train inputs
+    trainB/         # 8-bit sRGB train groundtruth
+    testA/          # 8-bit sRGB test inputs
+    testB/          # 8-bit sRGB test groundtruth
+```
 
 ## Citation
 If you find this repository useful, please kindly consider citing the following paper:
