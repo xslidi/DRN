@@ -25,7 +25,16 @@ The paper use the [FiveK](https://data.csail.mit.edu/graphics/fivek/) and [HDR+]
 
 - FiveK
 
-You can download the original FiveK dataset from the dataset [homepage](https://data.csail.mit.edu/graphics/fivek/) and then preprocess the dataset using Adobe Lightroom.
+You can download the original FiveK dataset from the dataset [homepage](https://data.csail.mit.edu/graphics/fivek/) and then process imagegs using Adobe Lightroom.
+
+  - To generate the input images, in the Collections list, select the collection Input `with Daylight WhiteBalance minus 1.5`.  
+  - To generate the target images, in the Collections list, select the collection `Experts/C`.  
+  - All the images are converted to `.PNG` format.
+
+- HDR+
+
+You can download the original HDR+ dataset from the dataset [homepage](http://www.hdrplusdata.org/) and then process imagegs using [rawpy](https://github.com/letmaik/rawpy).
+
 
 The final directory structure is as follows.
 
