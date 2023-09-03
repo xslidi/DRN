@@ -52,7 +52,7 @@ python train.py --name DRN --dataroot ./data/FiveK --batch_size 2 --gpu_ids 0 --
 ## Test
 - run
 ```bash
-python test.py --dataroot ./data/FiveK/testA --name exp212 --gpu_ids 0 --netG rdnccut 
+python test.py --dataroot ./data/FiveK/testA --name DRN --gpu_ids 0 --netG rdnccut 
 ```
 
 ## Citation
