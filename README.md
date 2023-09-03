@@ -39,6 +39,21 @@ The final directory structure is as follows.
     testA/          # 8-bit sRGB test inputs
     testB/          # 8-bit sRGB test groundtruth
 ```
+## Train
+- run visdom to monitor status
+```
+visdom
+```
+- run
+```bash
+python train.py --name DRN --dataroot ./data/FiveK --batch_size 2 --gpu_ids 0 --netG rdnccut --model cut --lambda_NCE 10 --nce_includes_all_negatives_from_minibatch --ndf 32 --netD fe --niter 20 --niter_decay 80 --spectral_norm
+```
+
+## Test
+- run
+```bash
+python test.py --dataroot ./data/FiveK/testA --name exp212 --gpu_ids 0 --netG rdnccut 
+```
 
 ## Citation
 If you find this repository useful, please kindly consider citing the following paper:
