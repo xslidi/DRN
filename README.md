@@ -29,6 +29,7 @@ The paper use the [FiveK](https://data.csail.mit.edu/graphics/fivek/) and [HDR+]
   - All the images are converted to `.PNG` format.
 
 - HDR+ : You can download the original HDR+ dataset from the dataset [homepage](http://www.hdrplusdata.org/) and then process images using [rawpy](https://github.com/letmaik/rawpy).
+  - To generate the input images, set `use_camera_wb=True` and `fbdd_noise_reduction=rawpy.FBDDNoiseReductionMode.Full`.
 
 The final directory structure is as follows.
 
